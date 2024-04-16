@@ -1,0 +1,114 @@
+/* Login.css */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #9cd3db, #96c2cf);
+    /* Mild Blue Gradient */
+}
+
+.title-container {
+    text-align: center;
+    color: #2c3e50;
+    /* New color for the title */
+    font-family: 'Open Sans', sans-serif;
+}
+
+.title-container h1 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    /* Adjust font size as needed */
+    margin-bottom: 20px;
+}
+
+.login-info {
+    text-align: center;
+    padding: 40px;
+    /* Increased padding for more emphasis */
+    color: #fff;
+    max-width: 600px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.login-info h2 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    /* Slightly smaller font size */
+    margin-bottom: 20px;
+}
+
+.login-info p {
+    font-size: 1.3rem;
+    /* Slightly smaller font size */
+    line-height: 1.6;
+}
+
+.login-form {
+    width: 400px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.company-title {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    /* Slightly smaller font size */
+}
+
+.company-description {
+    color: #4a4a4a;
+    /* Dark Gray */
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    /* Slightly smaller font size */
+    line-height: 1.5;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.input-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-icon svg {
+    width: 20px;
+    margin-right: 10px;
+    color: #555;
+}
+
+.input-icon input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background-color: #9cd3db;
+    /* Mild Blue */
+    border-color: #9cd3db;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #96c2cf;
+    /* Slightly darker mild blue on hover */
+    border-color: #96c2cf;
+}
