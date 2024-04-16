@@ -69,7 +69,7 @@ export class UserMapper{
             userstatus: dto.UserStatus? dto.UserStatus: true,
             dateofbirth: dto.DateOfBirth? dto.DateOfBirth: null,
             addressline: dto.AddressLine? dto.AddressLine: null,
-            postCode: dto.PostCode? dto.PostCode: null,
+            postcode: dto.Postcode? dto.Postcode: null,
             country: dto.Country? dto.Country: true,
             password: null,
             salt: null,

@@ -63,12 +63,6 @@ const SignUp = () => {
             setFirstNameError('Please enter your first name.');
             return;
         }
-
-        if (!middleName) {
-            setMiddleNameError('Please enter your middle name.');
-            return;
-        }
-
         if (!lastName) {
             setLastNameError('Please enter your last name.');
             return;
@@ -204,7 +198,6 @@ const SignUp = () => {
                                                     placeholder="Middle Name"
                                                     value={middleName}
                                                     onChange={(e) => setMiddleName(e.target.value)}
-                                                    required
                                                 />
                                             </div>
                                             {middleNameError && <div className="text-danger">{middleNameError}</div>}
