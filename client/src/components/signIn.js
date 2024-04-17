@@ -117,7 +117,7 @@ const SignUp = () => {
             Password: password,
         })
             .then((res) => {
-                if (res.data === 'Success') {
+                if (res.status === 200) {
                     setShowSuccessPopup(true);
                     clearForm();
                 } else {
@@ -159,7 +159,7 @@ const SignUp = () => {
                                 <Link className="nav-link" to="/faq" style={{ color: '#009933' }}>FAQ</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/login" style={{ color: '#009933' }}>Login</Link>
+                                <Link className="nav-link" to="/" style={{ color: '#009933' }}>Login</Link>
                             </li>
                         </ul>
                     </div>
