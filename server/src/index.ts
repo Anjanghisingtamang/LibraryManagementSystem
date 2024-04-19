@@ -40,10 +40,10 @@ router.post('/Login', (req, res) => { new AuthenticationsController().Login(req,
 router.get('/Users', (req, res) => { new UserControllers().GetUsers(req, res) });
 router.get("/Users/:userId", (req, res) => { new UserControllers().GetUser(req, res) });
 router.post('/Users', (req, res) => { new UserControllers().AddUser(req, res) });
-// router.put("/Users/:userId", (req, res) => { new UserControllers().UpdateUser(req, res) });
+router.put("/Users/:userId", (req, res) => { new UserControllers().UpdateUser(req, res) });
 
 
-// router.delete("/Users/:userId", authorize, (req, res) => { new UserControllers().DeleteUser(req, res) });
+router.delete("/Users/:userId", (req, res) => { new UserControllers().DeleteUser(req, res) });
 
 
 
