@@ -13,7 +13,6 @@ function Dashboard() {
                         {/* <OverviewSection /> */}
                         <h2>Welcome to the Book Reservation System</h2>
                         <h2></h2>
-                        <p>Effortlessly reserve books with real-time updates and personalized recommendations in our streamlined system.</p>
 
                     </Col>
 

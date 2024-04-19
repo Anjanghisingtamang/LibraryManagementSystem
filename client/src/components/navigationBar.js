@@ -41,7 +41,7 @@ const NavbarComponent = () => {
                         <div className="container">
                             <Link className="navbar-brand" to="/">
                                 <FiBook className="library-icon" size={30} style={{ color: '#009933' }} />
-                                <span className="library-text-custom" style={{ color: '#009933' }}>Library Management System</span>
+                                <span className="library-text-custom" style={{ color: '#009933' }}>Book Reservation System</span>
                             </Link>
                             <button
                                 className="navbar-toggler"

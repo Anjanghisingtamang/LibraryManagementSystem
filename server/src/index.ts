@@ -3,6 +3,8 @@ import { AuthenticationsController } from "./controller/AuthenticateController";
 // import { BranchController } from "./controller/BranchController";
 // import { RoleController } from "./controller/RoleController";
 import { UserControllers } from "./controller/UserControllers";
+import { BookController } from "./controller/BookController";
+
 import { UserTypeController } from "./controller/UserTypeController";
 
 let express = require('express');
@@ -42,10 +44,11 @@ router.get("/Users/:userId", (req, res) => { new UserControllers().GetUser(req, 
 router.post('/Users', (req, res) => { new UserControllers().AddUser(req, res) });
 router.put("/Users/:userId", (req, res) => { new UserControllers().UpdateUser(req, res) });
 
+ router.get('/Books', (req, res) => { new BookController().GetBooks(req, res) });
+ router.get('/Books', (req, res) => { new BookController().GetBook(req, res) });
+ router.delete("/Books/:booksId", (req, res) => { new BookController().DeleteBook(req, res) });
 
 router.delete("/Users/:userId", (req, res) => { new UserControllers().DeleteUser(req, res) });
-
-
 
 
 router.get('/UserTypes', (req, res) => { new UserTypeController().GetUserTypes(req, res) });

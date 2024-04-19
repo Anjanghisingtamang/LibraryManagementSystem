@@ -17,6 +17,7 @@ export class UserMapper{
             UserStatus: m?.userstatus,
             DateOfBirth: m?.dateofbirth,
             AddressLine: m?.addressline,
+            PostCode : m?.postcode,
             Country: m?.country,
             DateCreated: m?.datecreated ? m.datecreated: null,
             DateModified: m?.datemodified ? m.datemodified: null,

@@ -9,7 +9,7 @@ const BookManagement = () => {
 
     useEffect(() => {
         // Fetch projects data from the server when the component mounts
-        axios.get('http://localhost:5001/books')
+        axios.get('http://localhost:8080/Books')
             .then(response => SetBooks(response.data))
             .catch(error => console.error('Error fetching projects:', error));
     }, []);
@@ -33,7 +33,6 @@ const BookManagement = () => {
                     <table className='table'>
                         <thead>
                             <tr>
-                                <th>Book ID</th>
                                 <th>Book Title</th>
                                 <th>Book Author</th>
                                 <th>  ISBN </th>
@@ -48,16 +47,15 @@ const BookManagement = () => {
                         </thead>
                         <tbody>
                             {books.map((books, i) => (
-                                <tr key={books.BookID}>
-                                    <td>{books.BookTitle}</td>
-                                    <td>{books.BookAuthor}</td>
+                                <tr key={books.BookId}>
+                                    <td>{books.Title}</td>
+                                    <td>{books.Author}</td>
                                     <td>{books.ISBN}</td>
                                     <td>{books.Publisher}</td>
                                     <td>{books.PublicationDate}</td>
                                     <td>{books.Genre}</td>
-                                    <td>{books.BookAvailability}</td>
+                                    <td>{books.Avaibality}</td>
                                     <td>
-
                                         <Link to="/updatebook" className='btn btn-primary'>Update</Link>
                                         <button className='btn btn-danger ms-2'>Delete</button>
                                     </td>

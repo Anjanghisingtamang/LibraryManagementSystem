@@ -9,7 +9,7 @@ const UserManagement = () => {
 
     useEffect(() => {
         // Fetch projects data from the server when the component mounts
-        axios.get('http://localhost:5001/users')
+        axios.get('http://localhost:8080/Users')
             .then(response => setUsers(response.data))
             .catch(error => console.error('Error fetching projects:', error));
     }, []);
@@ -34,12 +34,11 @@ const UserManagement = () => {
                         <thead>
 
                             <tr>
-                                <th>User ID</th>
                                 <th>First Name</th>
                                 <th>Middle Name</th>
                                 <th>last Name</th>
-                                <th>Email</th>
                                 <th>Phone Number</th>
+                                <th>Email</th>
                                 <th>AdressLine</th>
                                 <th>Post Code</th>
                                 <th></th>
@@ -53,6 +52,7 @@ const UserManagement = () => {
                                     <td>{users.MiddleName}</td>
                                     <td>{users.LastName}</td>
                                     <td>{users.PhoneNumber}</td>
+                                    <td>{users.EmailAddress}</td>
                                     <td>{users.AddressLine}</td>
                                     <td>{users.PostCode}</td>
                                     <td>

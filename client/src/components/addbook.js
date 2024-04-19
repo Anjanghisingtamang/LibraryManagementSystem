@@ -257,7 +257,7 @@ const AddBook = () => {
             {/* Footer */}
             <footer className="footer mt-auto py-3 bg-light">
                 <div className="container text-center">
-                    <span className="text-muted">Library Management System &copy; 2024</span>
+                    <span className="text-muted">Book Reservation System &copy; 2024</span>
                 </div>
             </footer>
         </div>

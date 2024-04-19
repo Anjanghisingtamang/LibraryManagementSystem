@@ -172,7 +172,7 @@ const SignUp = () => {
                     <div className="col-md-6">
                         <div className="card">
                             <div className="card-body">
-                                <h2 className="card-title text-center mb-4">Join the Library Community</h2>
+                                <h2 className="card-title text-center mb-4">Join the Book Reservation System</h2>
                                 <form onSubmit={handleSignUp}>
                                     <div className="row mb-3">
                                         <div className="col">
@@ -344,7 +344,7 @@ const SignUp = () => {
             {/* Footer */}
             <footer className="footer mt-auto py-3 bg-light">
                 <div className="container text-center">
-                    <span className="text-muted">Library Management System &copy; 2024</span>
+                    <span className="text-muted">Book Reservation System &copy; 2024</span>
                 </div>
             </footer>
         </div >
