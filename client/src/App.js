@@ -4,6 +4,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import SignIn from './components/signIn'
 import Login from "./components/Login";
+import Dashboard from './components/dashboard'
+import UserManagement from './components/userManagement'
+import AddUser from './components/addUser'
+import BookManagement from './components/bookManagement'
+import AddBook from './components/addbook'
 import { useState } from "react";
 
 
@@ -25,7 +30,7 @@ function App() {
 
   //   </div>
   // )
-  
+
   const [userstate, setUserState] = useState({});
   return (
     <div className="App">
@@ -49,6 +54,11 @@ function App() {
             element={<Login setUserState={setUserState} />}
           ></Route>
           <Route path="/signup" element={<SignIn />}></Route>
+          <Route path='/dashboard' element={<Dashboard />} />
+          <Route path='/usermanagement' element={<UserManagement />} />
+          <Route path='/adduser' element={<AddUser />} />
+          <Route path='/bookmanagement' element={<BookManagement />} />
+          <Route path='/addbook' element={<AddBook />} />
         </Routes>
       </Router>
     </div>

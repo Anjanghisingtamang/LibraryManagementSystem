@@ -1,0 +1,47 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background-color: #bec0b8;
+    transition: left 0.3s ease;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+}
+
+.navbar-toggler {
+    border: none;
+    background-color: transparent;
+    color: #000;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.navbar-toggler:hover {
+    color: #009933;
+}
+
+.navbar-toggler-icon {
+    font-size: 24px;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        margin-left: 0;
+    }
+
+    .sidebar {
+        left: -250px;
+    }
+
+    .sidebar.open {
+        left: 0;
+    }
+}
