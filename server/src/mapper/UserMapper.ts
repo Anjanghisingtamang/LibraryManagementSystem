@@ -73,7 +73,7 @@ export class UserMapper{
             country: dto.Country? dto.Country: true,
             password: null,
             salt: null,
-            usertypeid:1,
+            usertypeid:dto.Usertypeid?2:1,
         }
 
         if(dto.Password != null)
